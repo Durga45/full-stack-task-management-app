@@ -21,7 +21,7 @@ Clone the repository for the front-end:
 
 bash
 Copy code
-git clone https://github.com/your-username/task-management-app-frontend.git
+git clone https://github.com/Durga45/task-management-app-frontend.git
 Navigate to the front-end directory:
 
 bash
