@@ -9,7 +9,7 @@ dotenv.config()
 const app=express()
 const port=process.env.PORT || 3000
 app.use(express.json())
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: 'https://full-stack-task-management-app-frontend.onrender.com' }));
 app.use("/api/v1",userRouter)
 app.use("/api/v1",taskRouter)
 
