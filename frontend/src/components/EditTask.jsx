@@ -31,7 +31,7 @@ const EditTask = ({ task, onEditTask, onCancel }) => {
         throw new Error('No token found. Please login first.');
       }
   
-      const url = `http://localhost:3000/api/v1/task/${updatedTask._id}`;
+      const url = `https://full-stack-task-management-app-backend.onrender.com/api/v1/task/${updatedTask._id}`; // Updated URL
       const response = await axios.put(url, updatedTask, {
         headers: { Authorization: `Bearer ${token}` },
       });
