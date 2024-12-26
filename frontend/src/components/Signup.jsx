@@ -14,20 +14,16 @@ const Signup = () => {
     setError(null);  
 
     try {
-      
-      const response = await axios.post('http://localhost:3000/api/v1/user/signup', {
+      // Updated API endpoint to use the live backend URL
+      const response = await axios.post('https://full-stack-task-management-app-backend.onrender.com/api/v1/user/signup', {
         fullName,
         email,
         password,
       });
 
-     
       console.log(response.data); 
-
-      
       navigate('/login');
     } catch (err) {
-      
       console.error('Signup error:', err);
       setError('Failed to sign up. Please try again.');
     }
@@ -92,7 +88,6 @@ const Signup = () => {
             </div>
           </div>
 
-        
           {error && (
             <div className="text-red-500 text-center text-sm mt-2">
               {error}
