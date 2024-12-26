@@ -22,7 +22,7 @@ const AddTask = () => {
         throw new Error('No token found. Please login first.');
       }
 
-      const response = await axios.get('http://localhost:3000/api/v1/tasks', {
+      const response = await axios.get('https://full-stack-task-management-app-backend.onrender.com/api/v1/tasks', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -42,7 +42,7 @@ const AddTask = () => {
         throw new Error('No token found. Please login first.');
       }
 
-      const response = await axios.get('http://localhost:3000/api/v1/user/profile', {
+      const response = await axios.get('https://full-stack-task-management-app-backend.onrender.com/api/v1/user/profile', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -65,7 +65,7 @@ const AddTask = () => {
         throw new Error('No token found. Please login first.');
       }
 
-      const response = await axios.post('http://localhost:3000/api/v1/create/tasks', {
+      const response = await axios.post('https://full-stack-task-management-app-backend.onrender.com/api/v1/create/tasks', {
         title,
         description,
         status: isDone, 
@@ -103,7 +103,7 @@ const AddTask = () => {
         throw new Error('No token found. Please login first.');
       }
 
-      await axios.delete(`http://localhost:3000/api/v1/task/${taskId}`, {
+      await axios.delete(`https://full-stack-task-management-app-backend.onrender.com/api/v1/task/${taskId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
