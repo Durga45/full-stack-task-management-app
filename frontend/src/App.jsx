@@ -15,15 +15,21 @@ function App() {
           <Route path="/" element={<WelcomePage />} />
           <Route path="/login" element={<SignIn />} />
           <Route path="/signup" element={<Signup />} />
-          
-         
           <Route 
             path="/addtask" 
-            element={<ProtectedRoute><AddTask /></ProtectedRoute>} 
+            element={
+              <ProtectedRoute>
+                <AddTask />
+              </ProtectedRoute>
+            } 
           />
           <Route 
             path="/edittask" 
-            element={<ProtectedRoute><EditTask /></ProtectedRoute>} 
+            element={
+              <ProtectedRoute>
+                <EditTask />
+              </ProtectedRoute>
+            } 
           />
         </Routes>
       </Router>
