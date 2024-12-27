@@ -21,7 +21,7 @@ const Signup = () => {
         password,
       });
 
-      console.log(response.data); 
+      // console.log(response.data); 
       navigate('/login');
     } catch (err) {
       console.error('Signup error:', err);
