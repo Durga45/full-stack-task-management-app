@@ -17,12 +17,12 @@ const SignIn = () => {
         email,
         password,
       });
-      console.log("Login response:", response);
+      // console.log("Login response:", response);
       const { token } = response.data;
       localStorage.setItem('token', token);
-      console.log('Token stored:', token);  // Check token
+      // console.log('Token stored:', token);  // Check token
       navigate('/addtask');
-      console.log('Navigating to /addtask');
+      // console.log('Navigating to /addtask');
     } catch (err) {
       setError('Invalid credentials. Please try again.');
       console.error('Login error:', err);
